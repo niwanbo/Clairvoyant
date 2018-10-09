@@ -101,6 +101,8 @@ class Methods(unittest.TestCase):
         self.assertEqual(a.TotalValue(0.00000001), 2.5)
         a.ClosePosition(a.Positions[0], 1, 0.00000001)
         self.assertEqual(a.BuyingPower, 2.5)
-
+        
+    def test_args(self,*args,**kwargs):
+        pass
 if __name__ == '__main__':
     unittest.main()
